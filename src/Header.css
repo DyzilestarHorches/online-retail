@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  position: sticky;
+  background-color: #131921;
+  align-items: center;
+}
+
+header .logo img {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+header .header-option {
+  color: white;
+  margin: 0 20px;
+}
+
+header .header-option .head-opt-1st-line {
+  font-size: 12px;
+  line-height: 12px;
+  color: #ccc;
+  font-weight: 400;
+}
+
+header .header-option .head-opt-2st-line {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+}
