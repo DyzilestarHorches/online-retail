@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "./asset/amazon-logo.jpg";
+import SearchIcon from "@mui/icons-material/Search";
 import "./Header.css";
 
 function Header() {
@@ -11,12 +12,14 @@ function Header() {
         </a>
       </div>
       <div className="header-option">
-        <span className="head-opt-1st-line">Deliver to</span> <br />
+        <span className="head-opt-1st-line">Deliver to</span>
         <span className="head-opt-2st-line">Vietnam</span>
       </div>
       <div className="search-box">
         <input type="text"></input>
-        <input type="submit"></input>
+        <div className="search-container">
+          <SearchIcon className="submit-search" />
+        </div>
       </div>
       <div className="header-option">
         <span className="head-opt-1st-line">Deliver to</span>

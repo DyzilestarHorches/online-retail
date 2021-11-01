@@ -1,5 +1,7 @@
 header {
+  min-width: fit-content;
   display: flex;
+  flex-direction: row;
   position: sticky;
   background-color: #131921;
   align-items: center;
@@ -8,24 +10,67 @@ header {
 header .logo img {
   width: 120px;
   height: auto;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 7px;
+  margin-left: 5px;
 }
 
 header .header-option {
-  color: white;
   margin: 0 20px;
+  height: 60px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid transparent;
+  color: white;
+}
+
+header .header-option:hover {
+  cursor: pointer;
+  border: 1px solid #d0d0d0;
+  z-index: 10;
 }
 
 header .header-option .head-opt-1st-line {
   font-size: 12px;
   line-height: 12px;
+  height: 10px;
   color: #ccc;
   font-weight: 400;
 }
 
 header .header-option .head-opt-2st-line {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 16px;
+  height: 10px;
   font-weight: 700;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+.search-box select {
+  width: auto;
+}
+.search-box input {
+  border-width: 0;
+  width: 600px;
+  height: 30px;
+}
+
+.search-box .search-container {
+  height: 32.32px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #febd69;
+}
+
+.submit-search {
+  transform: scale(1.6);
 }
